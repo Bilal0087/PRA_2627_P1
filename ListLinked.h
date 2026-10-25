@@ -107,7 +107,7 @@ T remove(int pos) override {
 }
 
 T get(int pos) override {
-    if (pos < 0 || pos > n)
+    if (pos < 0 || pos >= n)
         throw out_of_range("fuera del rango");
 
     Node<T>* aux = first;
@@ -174,4 +174,4 @@ return -1;
 
 };
 
-#endif LIST_LINKED_H
+#endif
